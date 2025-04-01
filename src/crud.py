@@ -105,7 +105,5 @@ class StravaRepository:
             data=data,
             files=files,
         )
-        print(response.content)
-        print(response.status_code)
         logger.info("Cropped Activity uploaded to Strava.")
         return response
